@@ -67,33 +67,8 @@
 
   </head>
   <body>
-    <header role="banner">
-      <nav role="navigation">
-        <p class="logo"><a href="index.html" title="WebSlides">WebSlides</a></p>
-        <ul>
-          <li class="github">
-            <a rel="external" href="https://github.com/jlantunez/webslides" title="Github">
-              <svg class="fa-github">
-                <use xlink:href="#fa-github"></use>
-              </svg>
-              <em>WebSlides</em>
-            </a>
-          </li>
-          <li class="twitter">
-            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
-              <svg class="fa-twitter">
-                <use xlink:href="#fa-twitter"></use>
-              </svg>
-              <em>@WebSlides</em>
-            </a>
-          </li>
-          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/jlantunez" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>jlantunez</em></a></li> -->
-        </ul>
-      </nav>
-    </header>
-
     <main role="main">
-      <article id="webslides" class="vertical">
+      <article id="webslides">
 
         <!-- Quick Guide
           - Each parent <section> in the <article id="webslides"> element is an individual slide.
@@ -101,43 +76,67 @@
           - <div class="wrap"> = container 1200px / <div class="wrap size-50"> = 600px;
         -->
 
-        <section>
-         <span class="background" style="background-image:url('https://webslides.tv/static/images/nature.jpg')"></span>
+        <section class="bg-light aligncenter">
           <!--.wrap = container 1200px -->
-          <div class="wrap aligncenter">
-            <h1><strong>Create beautiful stories</strong></h1>
-            <p class="text-intro">WebSlides makes HTML presentations easy.<br>
-              Just the essentials and using lovely CSS.
-            </p>
-            <p>
-              <a href="https://github.com/jlantunez/webslides/archive/master.zip" class="button zoomIn" title="Download WebSlides for free">
-                <svg class="fa-cloud-download">
-                  <use xlink:href="#fa-cloud-download"></use>
-                </svg>
-                WebSlides
-              </a>
-            </p>
+          <div class="wrap">
+            <h1><img width="400" height="400" class="fadeIn blacklogo" src="http://huert-on.com/img/logo2.png" alt="Apple Logo"></h1>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-blue aligncenter">
+          <video style="filter: blur(6px);"class="background-video dark" autoplay loop muted>
+            <source src="static/IMG_0745.mov" type="video/mp4">
+          </video>
+          <div class="wrap">
+            <h2 class="text-data">+500</h2>
           </div>
           <!-- .end .wrap -->
         </section>
         <section>
-          <!--.wrap = container 1200px -->
-          <div class="wrap size-50 aligncenter">
-            <h2><strong>Why WebSlides?</strong></h2>
-            <p class="text-intro">Good karma and productivity.</p>
-            <div class="bg-white shadow">
-              <ul class="flexblock reasons">
-                <li>
-                  <h2>An opportunity to engage.</h2>
-                  <p>WebSlides is about telling the story, and sharing it in a beautiful way. Hypertext and clean code as narrative elements.</p>
-                </li>
-                <li>
-                  <h2>Work better, faster.</h2>
-                  <p>Designers, marketers, and journalists can now focus on the content. Simply <a href="demos/index.html" title="WebSlides Demos">choose a demo</a> and customize it in minutes.</p>
-                </li>
-              </ul>
-            </div>
-            <!-- .end .bg-white shadow -->
+          <div class="wrap">
+            <h3>Equipo</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="static/images/pablo.jpg">
+                    <div class="overlay">
+                      <h2>Pablo Magaña</h2>
+                    </div>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail " src="static/images/julian.png">
+                    <div class="overlay">
+                      <h2>Julian Molina</h2>
+                    </div>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="static/images/david.jpg">
+                    <div class="overlay">
+                      <h2>David Alòs</h2>
+                    </div>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="static/images/alex.png">
+                    <div class="overlay">
+                      <h2>Alex Torres</h2>
+                    </div>
+                  </figure>
+                </a>
+              </li>
+            </ul>
           </div>
           <!-- .end .wrap -->
         </section>
@@ -387,14 +386,14 @@
     <!-- jQuery (required for slides to work) -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="static/js/webslides.js"></script>
-    
-        
+
+
     <script type="text/javascript">
       var slide = jQuery('#webslides').webslides();
     </script>
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
     <script defer src="static/js/svg-icons.js"></script>
-    
+
   </body>
 </html>
